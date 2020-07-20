@@ -1,0 +1,89 @@
+body {
+    font-family: Assistant;
+    direction: rtl;
+    background-image: linear-gradient(#ececec, #fefefe);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.textR{
+    color: black;
+    padding: 20px;
+}
+.image_index{
+    width:100%;
+    height:75%;
+} 
+.textS {
+    text-align: center;
+    padding: 10px;
+}
+.instagram {
+    width: 10%;
+    height: 10%;
+    padding: 5px;
+}
+    .instagram:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    } 
+    * {
+        box-sizing: border-box;
+    }
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+    /* Style the images inside the grid */
+    .column img {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+        .column img:hover {
+            opacity: 1;
+        }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    color: white;
+    font-size: 60px;
+    font-weight:bold;
+    cursor: pointer;
+}
